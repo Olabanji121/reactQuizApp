@@ -11,7 +11,7 @@ export default function QuestionComp({ content, scoreQuestion }) {
 
 	return (
 		<div className="row mt-10 ">
-			<div className="col text-center ">
+			<div className="col mx-auto  text-center ">
 				<p className="question-body text-center my-5">{content.question}</p>
                 {showOPtions()}
 				

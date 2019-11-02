@@ -4,13 +4,19 @@ export default function ResultComp({ score, resultUpdate, playAgain }) {
 
 
 	return (
-		<div>
-			<h5>Your score is {score}</h5>
-			{resultUpdate()}
-			<button onClick={() => playAgain()} className="btn btn-warning">
-				{" "}
-				PLAY AGAIN
-			</button>
+		<div className="container">
+			<div className="row">
+				<div className="col text-center">
+					{resultUpdate()}
+					<button
+						onClick={() => playAgain()}
+						className="btn btn-warning mt-5 m-left"
+					>
+						{" "}
+						PLAY AGAIN
+					</button>
+				</div>
+			</div>
 		</div>
 	);
 }
