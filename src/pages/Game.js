@@ -51,8 +51,10 @@ export default class Game extends Component {
 					<div className="row">
 						<div className="col">
 							<h1 className="text-slanted text-center text-success mt-5 ">
-								YOU PASSED FINAL SCORE:{" "}
-								<span className="text-orange">{this.state.score}</span>
+								FINAL SCORE:{" "}
+								<span className="text-orange">{this.state.score}</span> <br/>
+								<hr/>
+								YOU PASSED.
 							</h1>
 							<Pass />
 						</div>
@@ -66,8 +68,10 @@ export default class Game extends Component {
 				<div className="row">
 					<div className="col">
 						<h1 className="text-slanted text-center text-danger mt-5 ">
-							YOU FAILED FINAL SCORE:{" "}
-							<span className="text-warning">{this.state.score}</span>
+							FINAL SCORE:{" "}
+							<span className="text-orange">{this.state.score}</span> <br />
+							<hr/>
+							YOU FAILED.
 						</h1>
 						<Failed />
 					</div>
