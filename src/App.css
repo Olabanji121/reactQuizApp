@@ -1,5 +1,6 @@
 body {
 	font-family: "Open Sans", sans-serif !important;
+	box-sizing: border-box !important;
 }
 
 .text-slanted {
@@ -21,7 +22,7 @@ body {
 
 .gamebody{
 min-height: calc(100vh - 64px);
-background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("./images/question-background.png")center/cover no-repeat;
+background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("./images/blue.jpg")center/cover no-repeat;
 };
 
 
