@@ -4,16 +4,17 @@ import Failed from '../images/fail.gif'
 const FailCom = () => {
     return (
 			<>
-				<div className="container">
+				<div
+					className="container"
+					// style={{
+
+					// 	paddingTop: "50px"
+					// }}
+				>
 					<img
-						className="text-center"
+						className="text-center img-fluid mx-auto d-block"
 						src={Failed}
 						alt="loading...."
-						style={{
-							width: "500px",
-
-							paddingTop: "50px"
-						}}
 					/>
 				</div>
 			</>

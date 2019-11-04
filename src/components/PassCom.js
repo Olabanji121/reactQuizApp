@@ -4,16 +4,17 @@ import  Pass from "../images/congrat.gif"
 const PassCom = () => {
     return (
 			<>
-				<div className="container">
+				<div
+					className="container"
+					// style={{
+
+					// 	paddingTop: "50px"
+					// }}
+				>
 					<img
-						className="text-center"
+						className="text-center img-fluid mx-auto d-block"
 						src={Pass}
 						alt="loading...."
-						style={{
-							width: "500px",
-
-							paddingTop: "50px"
-						}}
 					/>
 				</div>
 			</>

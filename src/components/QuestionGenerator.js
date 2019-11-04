@@ -1,4 +1,4 @@
-function QuestionGenerator(count = 5) {
+function QuestionGenerator(count = 6) {
 
     let questions=[];
 	const questionsLIst = [

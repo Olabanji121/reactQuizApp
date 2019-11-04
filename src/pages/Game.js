@@ -12,12 +12,14 @@ export default class Game extends Component {
 		this.state = {
 			score: 0,
 			questionList: QuestionGenerator(),
-			questionIndex: 0
+			questionIndex: 1
+			
 		};
 		this.showContent = this.showContent.bind(this);
 		this.scoreQuestion = this.scoreQuestion.bind(this);
 		this.resultUpdate = this.resultUpdate.bind(this);
 		this.playAgain = this.playAgain.bind(this);
+	
 	}
 
 	showContent() {
@@ -27,6 +29,8 @@ export default class Game extends Component {
 				<Question
 					content={this.state.questionList[this.state.questionIndex]}
 					scoreQuestion={this.scoreQuestion}
+					qustionNUm={this.state.questionIndex}
+					totalQ={this.state.questionList.length-1}
 				/>
 			);
 		}
@@ -46,9 +50,8 @@ export default class Game extends Component {
 				<div className="container">
 					<div className="row">
 						<div className="col">
-							<h1 className="text-slanted text-center text-success mt-5 m-l2">
-								YOU PASSED <br />
-								FINAL SCORE:{" "}
+							<h1 className="text-slanted text-center text-success mt-5 ">
+								YOU PASSED FINAL SCORE:{" "}
 								<span className="text-orange">{this.state.score}</span>
 							</h1>
 							<Pass />
@@ -62,9 +65,8 @@ export default class Game extends Component {
 			<div className="container">
 				<div className="row">
 					<div className="col">
-						<h1 className="text-slanted text-center text-danger mt-5 m-l2">
-							YOU FAILED <br />
-							FINAL SCORE:{" "}
+						<h1 className="text-slanted text-center text-danger mt-5 ">
+							YOU FAILED FINAL SCORE:{" "}
 							<span className="text-warning">{this.state.score}</span>
 						</h1>
 						<Failed />
@@ -80,8 +82,20 @@ export default class Game extends Component {
 		this.setState({
 			score: 0,
 			questionList: QuestionGenerator(),
-			questionIndex: 0
+			questionIndex: 1
 		});
+	}
+
+	counter(){
+		if (this.state.next < 6){
+			this.setState({
+				next: this.state.next +1
+			});
+		}
+	}
+
+	componentDidMount(){
+		this.counter()
 	}
 
 	scoreQuestion(value) {

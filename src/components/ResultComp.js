@@ -10,7 +10,7 @@ export default function ResultComp({ score, resultUpdate, playAgain }) {
 					{resultUpdate()}
 					<button
 						onClick={() => playAgain()}
-						className="btn btn-warning mt-5 m-left"
+						className="btn btn-warning mt-5"
 					>
 						{" "}
 						PLAY AGAIN

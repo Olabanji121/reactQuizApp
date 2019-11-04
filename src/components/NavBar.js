@@ -9,9 +9,9 @@ const NavBar = () => {
 						to="/"
 						className="navbar-brand  text-orange text-slanted border border-danger rounded bg-dark"
 					>
-						<h4 style={{ paddingLeft: "10px", paddingRight: "10px" }}>
+						<span style={{ paddingLeft: "10px", paddingRight: "10px" }}>
 							Trivia Quiz
-						</h4>
+						</span>
 					</Link>
 				</div>
 
