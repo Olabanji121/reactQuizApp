@@ -4,6 +4,7 @@ import Question from "../components/QuestionComp";
 import Result from "../components/ResultComp";
 import Pass from "../components/PassCom";
 import Failed from '../components/FailCom';
+import './game.css';
 
 export default class Game extends Component {
 	constructor() {
