@@ -7,7 +7,7 @@ const NavBar = () => {
 				<div className="pl-3">
 					<Link
 						to="/"
-						className="navbar-brand  text-orange text-slanted border border-danger rounded"
+						className="navbar-brand  text-orange text-slanted border border-danger rounded bg-dark"
 					>
 						<h4 style={{ paddingLeft: "10px", paddingRight: "10px" }}>
 							Trivia Quiz
