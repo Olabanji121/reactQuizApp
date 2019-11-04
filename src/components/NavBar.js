@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 const NavBar = () => {
     return (
 			<nav className="navbar navbar-expand-sm navrbar-light bg-light">
-				<Link to="/" className="navbar-brand pl-3 ">
-					<h5>Logo</h5>
+				<Link to="/" className="navbar-brand pl-3 text-orange text-slanted">
+					<h4>Trivia Quiz</h4>
 				</Link>
 				<div className="collapse navbar-collapse show ml-sm-5 justify-content-end">
 					<ul className="navbar-nav">
