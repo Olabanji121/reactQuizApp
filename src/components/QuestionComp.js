@@ -17,7 +17,7 @@ export default function QuestionComp({ content, scoreQuestion, qustionNUm, total
 					<span className="badge badge-warning p-3 text-slanted">
 						{qustionNUm} / {totalQ}
 					</span>
-					<p className="question-body text-center my-5">{content.question}</p>
+					<p className="question-body text-center text-orange rounded my-5">{content.question}</p>
 					{showOPtions()}
 				</div>
 			</div>

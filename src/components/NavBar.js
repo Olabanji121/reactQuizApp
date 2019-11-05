@@ -19,12 +19,12 @@ const NavBar = () => {
 					<ul className="navbar-nav">
 						<li className="navbar-item  pl-3">
 							<Link to="/" className="nav-link  text-info">
-								<h5>Home</h5>
+								<h5 className="text-orange">Home</h5>
 							</Link>
 						</li>
 						<li className="navbar-item  pl-3">
 							<Link to="/game" className="nav-link text-info">
-								<h5>Quiz</h5>
+								<h5 className="text-orange">Quiz</h5>
 							</Link>
 						</li>
 					</ul>
